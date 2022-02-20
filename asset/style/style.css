@@ -35,6 +35,12 @@ button {
 .text-center {
   text-align: center;
 }
+.visible-hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible !important;
+}
 .mr-50 {
   margin-right: 50px;
 }
@@ -105,17 +111,54 @@ button {
   line-height: 1.2;
   text-transform: uppercase;
 }
+.animate__delay-05s {
+  animation-delay: 0.5s;
+}
+.animate__delay-08s {
+  animation-delay: 0.8s;
+}
+.animate__delay-1-2s {
+  animation-delay: 1.2s;
+}
+.animate__delay-1-5s {
+  animation-delay: 1.5s;
+}
+.animate__delay-1-8s {
+  animation-delay: 1.8s;
+}
+@keyframes fadeUpIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 /* END COMMON CSS */
+#header {
+  background-color: transparent;
+  height: 130px;
+  width: 100%;
+  line-height: 130px;
+  z-index: 99;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  z-index: 9;
+  position: fixed;
+}
 
 #header .header__nav {
   width: 1199px;
-  height: 130px;
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  line-height: 130px;
-  z-index: 9;
+}
+#header.scroll200 {
+  height: 100px;
+  line-height: 100px;
+  box-shadow: 0 0 50px 0 rgb(0 0 0 / 10%);
+  background-color: white;
 }
 #header .logo__container {
   width: 20%;
@@ -146,7 +189,6 @@ button {
   font-family: Roboto;
   text-decoration: none;
   font-weight: 500;
-  transition: all 1s;
   display: inline;
   overflow: hidden;
 }
@@ -553,7 +595,7 @@ button {
 }
 .feature__item-info p {
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 15px;
   color: #636363;
 }
 .feature__item-info p:hover {
