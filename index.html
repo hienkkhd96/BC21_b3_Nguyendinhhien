@@ -14,6 +14,7 @@
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="./library/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="./library/swiper/swiper.min.css">
+    <link rel="stylesheet" href="./asset/style/all.min.css">
     <link rel="stylesheet" href="./asset/style/flaticon.css">
     <link rel="stylesheet" href="./asset/style/style.css">
 </head>
@@ -23,20 +24,54 @@
         <img src="./asset/img/loading-02.svg" alt="">
     </div>
     <div id="header">
-        <div class="header__nav w1199">
-            <a class="header__logo" href="">
-                <img src="./asset/img/logo-2.png" alt="Logo">
-            </a>
-            <ul class="menu__list">
-                <li class="menu__item"><a href=""><span>Home</span></a></li>
-                <li class="menu__item"><a href=""><span>Pages</span></a></li>
-                <li class="menu__item"><a href=""><span>Sevices</span></a></li>
-                <li class="menu__item"><a href=""><span>Post Layout</span></a></li>
-                <li class="menu__item"><a href=""><span>Blog</span></a></li>
-                <li class="menu__item"><a href=""><span>Contact Us</span></a></li>
-            </ul>
+        <div class="header__nav w1199 flex">
+            <div class="logo__container">
+                <a class="header__logo flex" href="">
+                    <img src="./asset/img/logo-2.png" alt="Logo">
+                </a>
+            </div>
+            <div class="menu__container flex">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="">
+                            <p>Home
+                            </p>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item"><a href="">
+                            <p>Pages
+                            </p>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item"><a href="">
+                            <p>Sevices
+                            </p>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item"><a href="">
+                            <p>Post Layout
+                            </p>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item"><a href="">
+                            <p>Blog
+                            </p>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li class="menu__item"><a href="">
+                            <p>Contact Us
+                            </p>
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <div class="header__button">
-                <button class="gradient btn">
+                <button class="gradient btn btn-hover">
                     GET A QUOTE
                 </button>
             </div>
@@ -53,7 +88,7 @@
 
                 <p class="banner-inner__check">Master's degree in designing</p>
                 <p class="banner-inner__check">Outstanding mobile design</p>
-                <button class="gradient btn">Get Started</button>
+                <button class="gradient btn btn-hover pointer">Get Started</button>
             </div>
             <div class="banner-inner__img flex-center">
                 <img class="media" src="./asset/img/pic3_1.png" alt="banner">
@@ -121,7 +156,7 @@
                             <p>Get a view of events and trends. Be updated on our recent news</p>
                         </li>
                     </ul>
-                    <button class="about__button gradient">Learn More</button>
+                    <button class="about__button gradient btn-hover pointer">Learn More</button>
                 </div>
             </div>
         </div>
@@ -326,7 +361,7 @@
                         <li>SEO Marketing</li>
                         <li>Business Analysis</li>
                     </ul>
-                    <div class="plan__btn gradient">START NOW</div>
+                    <div class="plan__btn btn-hover pointer gradient">START NOW</div>
                 </div>
                 <div class="plan__item">
                     <div class="plan_head text-center">
@@ -347,7 +382,7 @@
                         <li>SEO Marketing</li>
                         <li>Business Analysis</li>
                     </ul>
-                    <div class="plan__btn gradient">START NOW</div>
+                    <div class="plan__btn btn-hover pointer gradient">START NOW</div>
                 </div>
                 <div class="plan__item">
                     <div class="plan_head text-center">
@@ -368,7 +403,7 @@
                         <li>SEO Marketing</li>
                         <li>Business Analysis</li>
                     </ul>
-                    <div class="plan__btn gradient">START NOW</div>
+                    <div class="plan__btn btn-hover pointer gradient">START NOW</div>
                 </div>
             </div>
         </div>
@@ -573,6 +608,7 @@
             </div>
         </div>
     </div>
+    <i class="fi fi-ss-angle-small-down"></i>
     <div id="footer">
         <div class="subscribe__form w1199 center flex">
             <div class="form__head flex">
@@ -580,7 +616,7 @@
             </div>
             <div class="form__input">
                 <input type="email" placeholder="Your Email Address">
-                <div class="subscribe__btn gradient"><i class="las la-paper-plane"></i></div>
+                <div class="subscribe__btn btn-hover pointer gradient"><i class="las la-paper-plane"></i></div>
             </div>
         </div>
         <div class="footer__content w1199 center">
@@ -591,17 +627,17 @@
                     </div>
                     <ul class="contacts__list">
                         <li class="contact__item">
-                            <i></i>
-                            <a href="tel:18001234567">+91 987-654-3210</a>
+                            <i class="fas fa-phone btn-hover gradient"></i>
+                            <a href="tel:18001234567">1800-123-4567</a>
                             <a href="tel:+919876543210">+91 987-654-3210</a>
                         </li>
                         <li class="contact__item">
-                            <i></i>
+                            <i class="fas fa-envelope btn-hover gradient"></i>
                             <a href="mailto:info@example.com">info@example.com</a>
                             <a href="mailto:services@gmail.com">services@gmail.com</a>
                         </li>
                         <li class="contact__item">
-                            <i></i>
+                            <i class="fas fa-map-marker-alt btn-hover gradient"></i>
                             <p>Demo Address #8901 Marmora</p>
                             <p>Road Chi Minh City, Vietnam</p>
                         </li>
@@ -621,14 +657,14 @@
                 </div>
                 <div class="other__item">
                     <div class="other__head">
-                        <h2>Our links</h2>
+                        <h2>Our Services</h2>
                     </div>
                     <ul class="other__list">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Team</a></li>
-                        <li><a href="">Blog</a></li>
+                        <li><a href="">Strategy & Research</a></li>
+                        <li><a href="">Web Development</a></li>
+                        <li><a href="">Web Solution</a></li>
+                        <li><a href="">Digital Marketing</a></li>
+                        <li><a href="">App Design</a></li>
                     </ul>
                 </div>
                 <div class="other__item">
@@ -636,67 +672,47 @@
                         <h2>Our links</h2>
                     </div>
                     <ul class="other__list">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Team</a></li>
-                        <li><a href="">Blog</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Support</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="footer__bottom">
+            <div class="ft-bottom__container w1199 flex">
+                <div class="ft-bottom__left">
+                    <span>Copyright © 2022</span>
+                    <a href="https://www.facebook.com/profile.php?id=100008514918679" target="_blank">
+                        NGUYỄN ĐÌNH HIẾN
+                    </a>
+                    <span>All rights reserved.</span>
+                </div>
+                <div class="ft-bottom__right">
+                    <a href="https://www.facebook.com/profile.php?id=100008514918679" target="_blank" class=" fab
+                        fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/dinh_hien_hd/" target="_blank" class=" fab
+                        fa-instagram"></a>
+                    <a href="https://twitter.com/HIENDIN32934870" target="_blank" class=" fab
+                        fa-twitter"></a>
+                </div>
+            </div>
+        </div>
+        <!-- Jquery library -->
+        <script src="./library/jquery/dist/jquery.min.js"></script>
+        <!-- Numscroller library -->
+        <script src="./library/numscroller/numscroller-1.0.js"></script>
+        <!-- OwlCarousel library -->
+        <script src="./library/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <!-- Swipper library -->
+        <script src="./library/swiper/swiper.min.js"></script>
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/a7fbdf7190.js" crossorigin="anonymous"></script>
+        <!-- Slider javascript -->
+        <script src="./asset/javascript/Slider.js"></script>
 
-    <script src="./library/jquery/dist/jquery.min.js"></script>
-    <script src="./library/numscroller/numscroller-1.0.js"></script>
-    <script src="./library/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script src="./library/swiper/swiper.min.js"></script>
-    <script>var testimonialThumbs = new Swiper(".testimonial-thumbs", {
-            spaceBetween: 10,
-            slidesPerView: 3,
-            centeredSlides: true,
-            freeMode: true,
-            autoplay: false,
-            loop: true,
-            speed: 3000,
-        });
-        var testimonialContent = new Swiper(".testimonial-comment", {
-            spaceBetween: 10,
-            autoplay: true,
-            loop: true,
-            speed: 3000,
-            thumbs: {
-                swiper: testimonialThumbs
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            }
-        });
-        $('.blogs__owl-carousel').owlCarousel({
-            items: 3,
-            loop: true,
-            margin: 30,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplaySpeed: 3000,
-            dragEndSpeed: 3000,
-            autoplayHoverPause: true,
-        })
-        $('.clients__carousel').owlCarousel({
-            items: 6,
-            loop: true,
-            margin: 30,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            autoplaySpeed: 3000,
-            dragEndSpeed: 3000,
-            autoplayHoverPause: true,
-        })
-        $(window).on('load', function () {
-            $('.loading').fadeOut('slow')
-        })
-    </script>
 
 </body>
 
