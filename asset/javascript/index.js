@@ -6,17 +6,27 @@ const priceBasic = $(".price__basic");
 const priceStandart = $(".price__standart");
 const pricePremium = $(".price__premium");
 const priceTime = document.querySelectorAll(".plan__price span:nth-child(2)");
+const scrollBtnTop = document.querySelector(".scroll__top");
 // Header change onScroll
 const headerConfig = () => {
-  if (document.documentElement.scrollTop > 130) {
+  if (document.documentElement.scrollTop >= 130) {
     header.classList.add("scroll200");
   } else {
     header.classList.remove("scroll200");
   }
 };
 headerConfig();
+const scrollConfig = () => {
+  if (document.documentElement.scrollTop >= 600) {
+    scrollBtnTop.style.visibility = "visible";
+  } else {
+    scrollBtnTop.style.visibility = "hidden";
+  }
+};
+scrollConfig;
 window.onscroll = function () {
   headerConfig();
+  scrollConfig();
 };
 // plan year or month
 planMonth.onclick = function () {

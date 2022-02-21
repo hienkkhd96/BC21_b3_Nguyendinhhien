@@ -5,6 +5,7 @@
 }
 html {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   overflow-x: hidden;
@@ -1476,6 +1477,25 @@ button {
   border-radius: 50%;
   text-decoration: none;
   margin-left: 6px;
+}
+/* SCROLL TO TOP  */
+.scroll__top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #f55f8d;
+  text-align: center;
+  border-radius: 4px;
+  transition: all 1s;
+  visibility: visible;
+  box-shadow: -4px 4px 24px -10px #f55f8d;
+}
+.scroll__top a {
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 18px;
 }
 /* LOADDING */
 .loading {
