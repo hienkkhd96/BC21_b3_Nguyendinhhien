@@ -39,36 +39,79 @@
                     <li class="menu__item"><a href="">
                             <p>Home
                             </p>
+                            <ul class="sub-nav-list submenu fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
+                                <li class="sub-nav-item"><a href="">Home 1</a></li>
+                                <li class="sub-nav-item"><a href="">Home 2</a></li>
+                                <li class="sub-nav-item"><a href="">Home 3</a></li>
+                            </ul>
                             <i class="fas fa-chevron-down"></i>
                         </a>
                     </li>
                     <li class="menu__item"><a href="">
                             <p>Pages
                             </p>
+                            <ul class="sub-nav-list">
+                                <li class="sub-nav-item"><a href="">About Us</a></li>
+                                <li class="sub-nav-item"><a href="">Faq</a></li>
+                                <li class="sub-nav-item"><a href="">Pricing Table</a></li>
+                                <li class="sub-nav-item"><a href="">Team</a></li>
+                                <li class="sub-nav-item"><a href="">Coming soon</a></li>
+                                <li class="sub-nav-item"><a href="">EROR 404</a></li>
+                                <li class="sub-nav-item"><a href="">Site Down</a></li>
+                            </ul>
                             <i class="fas fa-chevron-down"></i>
                         </a>
                     </li>
                     <li class="menu__item"><a href="">
                             <p>Sevices
                             </p>
+                            <ul class="sub-nav-list">
+                                <li class="sub-nav-item"><a href="">Services</a></li>
+                                <li class="sub-nav-item"><a href="">Services Details</a></li>
+                            </ul>
                             <i class="fas fa-chevron-down"></i>
                         </a>
                     </li>
                     <li class="menu__item"><a href="">
                             <p>Post Layout
                             </p>
+                            <ul class="sub-nav-list">
+                                <li class="sub-nav-item"><a href="">Post Standard</a></li>
+                                <li class="sub-nav-item"><a href="">Post Left Sidebar</a></li>
+                                <li class="sub-nav-item"><a href="">Post Header Image</a></li>
+                                <li class="sub-nav-item"><a href="">Post Slide Show</a></li>
+                                <li class="sub-nav-item"><a href="">Post Side Image</a></li>
+                                <li class="sub-nav-item"><a href="">Post Gallery</a></li>
+                                <li class="sub-nav-item"><a href="">Post Gallery Alt</a></li>
+                                <li class="sub-nav-item"><a href="">Post Link</a></li>
+                                <li class="sub-nav-item"><a href="">Post Audio</a></li>
+                                <li class="sub-nav-item"><a href="">Post Video</a></li>
+                                <li class="sub-nav-item"><a href="">Post With Pagination</a></li>
+                                <li class="sub-nav-item"><a href="">Post Open Gutenberg</a></li>
+                            </ul>
                             <i class="fas fa-chevron-down"></i>
                         </a>
                     </li>
                     <li class="menu__item"><a href="">
                             <p>Blog
                             </p>
+                            <ul class="sub-nav-list">
+                                <li class="sub-nav-item"><a href="">Blog Gird 2</a></li>
+                                <li class="sub-nav-item"><a href="">Large Left Sidebar</a></li>
+                                <li class="sub-nav-item"><a href="">Large Right Sidebar</a></li>
+                                <li class="sub-nav-item"><a href="">Blog Details</a></li>
+                            </ul>
                             <i class="fas fa-chevron-down"></i>
                         </a>
                     </li>
                     <li class="menu__item"><a href="">
                             <p>Contact Us
                             </p>
+                            <ul class="sub-nav-list">
+                                <li class="sub-nav-item"><a href="">Contact Us 1</a></li>
+                                <li class="sub-nav-item"><a href="">Contact Us 2</a></li>
+                                <li class="sub-nav-item"><a href="">Contact Us 3</a></li>
+                            </ul>
                             <i class="fas fa-chevron-down"></i>
                         </a>
                     </li>
@@ -84,7 +127,7 @@
     <!-- banner -->
     <div id="banner">
         <div class="container w1199 flex-center">
-            <div class="banner-inner__info visible-hidden">
+            <div class="banner-inner__info">
                 <h3 class="banner__title wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">We are The Best</h3>
                 <h1 class="banner__header  wow fadeInUp" data-wow-duration="2s" data-wow-delay="1.2s">
                     Freelance Product Designer Running
@@ -101,10 +144,9 @@
                 <button class="gradient btn btn-hover pointer  wow fadeInUp" data-wow-duration="2s"
                     data-wow-delay="2s">Get Started</button>
             </div>
-            <div class="banner-inner__img visible-hidden flex-center wow fadeInUp" data-wow-duration="2s"
-                data-wow-delay="2.2s">
+            <div class="banner-inner__img flex-center wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
                 <img class="media" src="./asset/img/pic3_1.png" alt="banner">
-                <img class="move1 banner__img" src="./asset/img/pic1.png" alt="">
+                <img class="move1 banner__img wow zoomIn" data-wow-duration="2s" data-wow-delay="2s" src="./asset/img/pic1.png" alt="">
             </div>
         </div>
     </div>
@@ -358,8 +400,8 @@
                 <h3>Choose Your Plan</h3>
                 <h1>Choose Your Plan</h1>
             </div>
-            <div class="plan__togglebtn flex-center gradient">
-                <span class="plan__month">MONTHLY</span>
+            <div class="plan__togglebtn month flex-center gradient">
+                <span class="plan__month cl-black">MONTHLY</span>
                 <span class="plan__year">YEARLY</span>
             </div>
             <div class="plan__list flex-center">
@@ -371,7 +413,7 @@
                         <img src="./asset/img/pic4_1.jpg" alt="">
                     </div>
                     <div class="plan__price text-center">
-                        <span>$49</span>
+                        <span class="price__basic">$49</span>
                         <span>/Month</span>
                     </div>
                     <ul class="planoption__list">
@@ -392,7 +434,7 @@
                         <img src="./asset/img/pic5_1.jpg" alt="">
                     </div>
                     <div class="plan__price text-center">
-                        <span>$99</span>
+                        <span class="price__standart">$99</span>
                         <span>/Month</span>
                     </div>
                     <ul class="planoption__list">
@@ -413,7 +455,7 @@
                         <img src="./asset/img/pic6_1.jpg" alt="">
                     </div>
                     <div class="plan__price text-center">
-                        <span>$149</span>
+                        <span class="price__premium">$149</span>
                         <span>/Month</span>
                     </div>
                     <ul class="planoption__list">
@@ -754,6 +796,20 @@
                 resetAnimation: true,     // reset animation on end (default is true)
             }
         );
+        var wow = new WOW({
+            boxClass: 'submenu',      // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 0,          // distance to the element when triggering the animation (default is 0)
+            mobile: true,       // trigger animations on mobile devices (default is true)
+            live: false,       // act on asynchronously loaded content (default is true)
+            callback: function (box) {
+                // the callback is fired every time an animation is started
+                // the argument that is passed in is the DOM node being animated
+            },
+            scrollContainer: null,    // optional scroll container selector, otherwise use window,
+            resetAnimation: true,     // reset animation on end (default is true)
+
+        })
         new WOW().init();
     </script>
     <!-- my javascript -->

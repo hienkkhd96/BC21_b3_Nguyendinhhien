@@ -25,6 +25,12 @@ button {
   background-position: top;
   background-size: 100%;
 }
+.cl-white {
+  color: #fff !important;
+}
+.cl-black {
+  color: black !important;
+}
 .mr-auto {
   margin-left: auto;
   margin-right: auto;
@@ -35,12 +41,7 @@ button {
 .text-center {
   text-align: center;
 }
-.visible-hidden {
-  visibility: hidden;
-}
-.visible {
-  visibility: visible !important;
-}
+
 .mr-50 {
   margin-right: 50px;
 }
@@ -111,21 +112,7 @@ button {
   line-height: 1.2;
   text-transform: uppercase;
 }
-.animate__delay-05s {
-  animation-delay: 0.5s;
-}
-.animate__delay-08s {
-  animation-delay: 0.8s;
-}
-.animate__delay-1-2s {
-  animation-delay: 1.2s;
-}
-.animate__delay-1-5s {
-  animation-delay: 1.5s;
-}
-.animate__delay-1-8s {
-  animation-delay: 1.8s;
-}
+
 @keyframes fadeUpIn {
   from {
     transform: translateY(50px);
@@ -146,14 +133,15 @@ button {
   z-index: 99;
   left: 50%;
   transform: translateX(-50%);
-  transition: 0.5s;
   z-index: 9;
   position: fixed;
+  transition: all 1s;
 }
 
 #header .header__nav {
   width: 1199px;
 }
+
 #header.scroll200 {
   height: 100px;
   line-height: 100px;
@@ -195,15 +183,60 @@ button {
 #header .menu__item a p {
   position: relative;
 }
-#header .menu__item:hover p {
+#header .menu__item > a:hover > p {
   color: #636363;
-  animation: moveUp 0.2s ease-in-out;
+  animation: moveUp 0.4s ease-in-out;
 }
 #header .menu__item i {
   position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+.header__nav .sub-nav-list {
+  position: absolute;
+  background-color: white;
+  list-style-type: none;
+  left: 0%;
+  padding-left: 20px;
+  visibility: hidden;
+  transition: all 0.7s;
+  box-shadow: #0000001a 0px 1px 40px 0px;
+  transform: translateY(6%);
+  opacity: 0;
+}
+#header .menu__item:hover > .sub-nav-list {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.header__nav .sub-nav-list li {
+  line-height: 24px;
+  width: 180px;
+  padding: 10px 0px;
+  transition: all 0.3s;
+  position: relative;
+}
+.header__nav .sub-nav-list li:hover {
+  padding-left: 15px;
+}
+.header__nav .sub-nav-list li:before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+.header__nav .sub-nav-list li:hover::before {
+  content: "";
+  width: 10px;
+  height: 1px;
+  background-color: #f55f8d;
+  left: 0px;
+}
+.header__nav .sub-nav-list li:hover a {
+  color: #f55f8d !important;
 }
 @keyframes moveUp {
   0% {
@@ -212,11 +245,11 @@ button {
   }
   50% {
     transform: translateY(20px);
-    opacity: 0.7;
+    opacity: 0;
   }
   51% {
     transform: translateY(-20px);
-    opacity: 0.8;
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
@@ -311,7 +344,7 @@ button {
   vertical-align: middle;
 }
 .move1 {
-  animation: move1 5s infinite;
+  /* animation: move1 5s infinite; */
 }
 
 @keyframes move1 {
@@ -326,14 +359,6 @@ button {
   100% {
     -webkit-transform: rotate(1deg) translate(2px, 2px);
     transform: rotate(1deg) translate(2px, 2px);
-  }
-}
-@keyframes zoomIn1-4 {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1.4);
   }
 }
 
@@ -764,6 +789,25 @@ button {
   padding: 4px;
   box-shadow: 0 10px 20px 0 rgb(0 0 0 / 20%);
   transition: all 1s;
+  position: relative;
+}
+.plan__togglebtn::before {
+  content: "";
+  width: 48%;
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  z-index: 0;
+  border-radius: 5px;
+  transition: all 1s;
+}
+.plan__togglebtn.month::before {
+  left: 5px;
+}
+.plan__togglebtn.year::before {
+  left: 50%;
 }
 .plan__togglebtn span {
   font-size: 14px;
@@ -771,6 +815,10 @@ button {
   width: 50%;
   text-align: center;
   line-height: 42px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 3;
+  transition: all 1s;
 }
 #section__plan .plan__list {
   margin: 0 -15px;
@@ -1375,7 +1423,7 @@ button {
   padding: 8px 0px 8px 15px;
   position: relative;
 }
-.other__item li:before {
+.other__item li a:before {
   content: "\f105";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
@@ -1394,7 +1442,7 @@ button {
   opacity: 0.6;
   transition: all 0.5s;
 }
-.other__item li a:hover {
+.other__item li:hover a {
   opacity: 1;
 }
 .footer__bottom {
