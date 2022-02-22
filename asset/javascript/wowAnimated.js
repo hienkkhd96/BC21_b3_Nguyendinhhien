@@ -1,6 +1,6 @@
 var wow = new WOW({
   boxClass: "wow", // animated element css class (default is wow)
-  animateClass: "animated", // animation css class (default is animated)
+  animateClass: "animate__animated", // animation css class (default is animated)
   offset: 0, // distance to the element when triggering the animation (default is 0)
   mobile: true, // trigger animations on mobile devices (default is true)
   live: true, // act on asynchronously loaded content (default is true)
@@ -13,7 +13,7 @@ var wow = new WOW({
 });
 var wow = new WOW({
   boxClass: "submenu", // animated element css class (default is wow)
-  animateClass: "animated", // animation css class (default is animated)
+  animateClass: "animate__animated", // animation css class (default is animated)
   offset: 0, // distance to the element when triggering the animation (default is 0)
   mobile: true, // trigger animations on mobile devices (default is true)
   live: false, // act on asynchronously loaded content (default is true)
@@ -25,3 +25,4 @@ var wow = new WOW({
   resetAnimation: true, // reset animation on end (default is true)
 });
 new WOW().init();
+wow.init();

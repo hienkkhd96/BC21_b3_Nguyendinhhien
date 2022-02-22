@@ -124,8 +124,20 @@ button {
     opacity: 1;
   }
 }
-
 /* END COMMON CSS */
+/* LOADDING */
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 99;
+}
 #header {
   background-color: transparent;
   height: 130px;
@@ -328,24 +340,29 @@ button {
 .banner-inner__info button {
   margin-top: 10px;
 }
+#banner .banner__move {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #banner .banner-inner__img {
   width: 40%;
   margin-left: 15px;
   position: relative;
   left: 40px;
+  transition: all 1s;
 }
 
-#banner .banner-inner__img .media {
+#banner .banner-inner__img .banner__media {
   width: 570px;
   height: 600px;
 }
-.banner__img {
-  position: absolute;
-  width: 160%;
-  vertical-align: middle;
-}
 .move1 {
-  /* animation: move1 5s infinite; */
+  animation: move1 5s infinite;
 }
 
 @keyframes move1 {
@@ -1496,17 +1513,4 @@ button {
   text-decoration: none;
   font-size: 18px;
   padding: 0 18px;
-}
-/* LOADDING */
-.loading {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  z-index: 99;
 }

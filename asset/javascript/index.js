@@ -40,7 +40,7 @@ planMonth.onclick = function () {
     pricePremium[0].innerText = "$199";
     priceTime.innerText = "Month";
     for (let i = 0; i < priceTime.length; i++) {
-      priceTime[i].innerText = "/month";
+      priceTime[i].innerText = "/Month";
     }
   }
 };
