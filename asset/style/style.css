@@ -218,7 +218,7 @@ button {
   transform: translateY(6%);
   opacity: 0;
 }
-#header .menu__item:hover > .sub-nav-list {
+#header .menu__item:hover .sub-nav-list {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
