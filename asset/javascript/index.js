@@ -7,6 +7,7 @@ const priceStandart = $(".price__standart");
 const pricePremium = $(".price__premium");
 const priceTime = document.querySelectorAll(".plan__price span:nth-child(2)");
 const scrollBtnTop = document.querySelector(".scroll__top");
+const featureItem = $(".feature__item");
 // Header change onScroll
 const headerConfig = () => {
   if (document.documentElement.scrollTop >= 130) {
@@ -59,3 +60,18 @@ planYear.onclick = function () {
     }
   }
 };
+// feature item hover
+for (let i = 0; i < featureItem.length; i++) {
+  featureItem[i].onmouseover = function (e) {
+    console.log(e);
+    if (e.isTrusted) {
+      featureItem[i].classList.add("active");
+    }
+    let filterItem = featureItem.filter((item) => {
+      return item !== i;
+    });
+    for (let j = 0; j < filterItem.length; j++) {
+      filterItem[j].classList.remove("active");
+    }
+  };
+}
