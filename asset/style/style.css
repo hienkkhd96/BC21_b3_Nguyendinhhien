@@ -582,7 +582,6 @@ button {
   );
   background-size: 200%;
   color: white;
-  animation: opacity1 1s 1.5;
 }
 #section__features .feature__item.active:before,
 #section__features .feature__item.active p {

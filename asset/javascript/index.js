@@ -65,6 +65,7 @@ for (let i = 0; i < featureItem.length; i++) {
   featureItem[i].onmouseover = function (e) {
     console.log(e);
     if (e.isTrusted) {
+      localStorage.setItem("ITEMHOVER", i);
       featureItem[i].classList.add("active");
     }
     let filterItem = featureItem.filter((item) => {
@@ -74,4 +75,7 @@ for (let i = 0; i < featureItem.length; i++) {
       filterItem[j].classList.remove("active");
     }
   };
+  // load item onhover when refresh page
+  const indexOnHover = localStorage.getItem("ITEMHOVER");
+  featureItem[Number(indexOnHover)].classList.add("active");
 }
