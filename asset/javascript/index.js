@@ -24,7 +24,7 @@ const scrollConfig = () => {
     scrollBtnTop.style.visibility = "hidden";
   }
 };
-scrollConfig;
+scrollConfig();
 window.onscroll = function () {
   headerConfig();
   scrollConfig();
@@ -63,7 +63,6 @@ planYear.onclick = function () {
 // feature item hover
 for (let i = 0; i < featureItem.length; i++) {
   featureItem[i].onmouseover = function (e) {
-    console.log(e);
     if (e.isTrusted) {
       localStorage.setItem("ITEMHOVER", i);
       featureItem[i].classList.add("active");
@@ -75,7 +74,7 @@ for (let i = 0; i < featureItem.length; i++) {
       filterItem[j].classList.remove("active");
     }
   };
-  // load item onhover when refresh page
-  const indexOnHover = localStorage.getItem("ITEMHOVER");
-  featureItem[Number(indexOnHover)].classList.add("active");
 }
+// load item onhover when refresh page
+const indexOnHover = localStorage.getItem("ITEMHOVER");
+featureItem[Number(indexOnHover) || null].classList.add("active");

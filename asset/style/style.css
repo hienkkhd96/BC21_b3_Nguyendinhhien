@@ -196,8 +196,8 @@ button {
 #header .menu__item a p {
   position: relative;
 }
-#header .menu__item > a:hover > p {
-  color: #636363;
+#header .menu__item:hover > a > p {
+  color: #f55f8d;
   animation: moveUp 0.4s ease-in-out;
 }
 #header .menu__item i {
@@ -205,6 +205,7 @@ button {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  transition: all 1s;
 }
 .header__nav .sub-nav-list {
   position: absolute;
@@ -1499,7 +1500,6 @@ button {
   text-align: center;
   border-radius: 4px;
   transition: all 1s;
-  visibility: visible;
   box-shadow: -4px 4px 24px -10px #f55f8d;
 }
 .scroll__top a {
@@ -1508,4 +1508,21 @@ button {
   text-decoration: none;
   font-size: 18px;
   padding: 0 18px;
+}
+/* TOOL BAR */
+.tool__bar .settings {
+  width: 40px;
+  height: 40px;
+  color: #333333;
+  background-color: #fff;
+  font-size: 22px;
+  position: fixed;
+  z-index: 9;
+  left: 0px;
+  cursor: pointer;
+  top: 200px;
+  box-shadow: 2px 1px 5px rgb(0 0 0 / 10%);
+}
+.tool__bar .settings i {
+  line-height: 40px;
 }
