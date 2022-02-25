@@ -1,17 +1,21 @@
 var testimonialThumbs = new Swiper(".testimonial-thumbs", {
-  spaceBetween: 10,
-  slidesPerView: 3,
-  centeredSlides: true,
-  freeMode: true,
-  autoplay: false,
   loop: true,
+  slidesPerView: 3,
+  nav: true,
+  autoplaySpeed: 3000,
+  centeredSlides: true,
   speed: 3000,
+  autoplay: true,
+  dots: false,
 });
 var testimonialContent = new Swiper(".testimonial-comment", {
-  spaceBetween: 10,
-  autoplay: true,
   loop: true,
+  margin: 0,
+  nav: true,
+  autoplaySpeed: 3000,
   speed: 3000,
+  autoplay: true,
+  dots: true,
   thumbs: {
     swiper: testimonialThumbs,
   },
