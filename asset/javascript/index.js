@@ -77,4 +77,4 @@ for (let i = 0; i < featureItem.length; i++) {
 }
 // load item onhover when refresh page
 const indexOnHover = localStorage.getItem("ITEMHOVER");
-featureItem[Number(indexOnHover) || 1].classList.add("active");
+featureItem[Number(indexOnHover) || 0].classList.add("active");
